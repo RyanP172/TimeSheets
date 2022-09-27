@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="_View">
+                <MenuItem Header="_Employees"/>
+                <MenuItem Header="_Admin"/>
+            </MenuItem>
+        </Menu>
+
+        <StatusBar Grid.Row="3">
+            <StatusBarItem FontSize="20" Content=" @Premier Ducts Employees Management App"/>
+        </StatusBar>
 
     </Grid>
 </Window>
